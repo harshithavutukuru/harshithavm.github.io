@@ -343,3 +343,18 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+.work p {
+    margin : 5px;
+}
+
+.work li {
+    list-style-type: square;
+}
+
+@media screen and (max-width: 600px) {
+    header ul {
+        text-align: center;
+        padding-left: 0;
+        margin-left: 0;
+    }
+  }
