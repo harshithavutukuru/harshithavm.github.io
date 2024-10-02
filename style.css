@@ -343,38 +343,57 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-#experience {
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 20px; /* Padding around the section */
+
+
+/*--------------Work Experience Styles-------------------*/
+.experience {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url(../images/experience.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    padding-right: 2%;
+    height: 100%;
+    width: 100%;
 }
 
-/* Style for the container */
-.container {
-    max-width: 800px; /* Max width for content */
-    margin: auto; /* Center the container */
+.experience p {
+    margin : 5px;
 }
 
-/* Style for the experience headings */
-h2 {
-    color: #333; /* Darker text color for headings */
-    text-align: center; /* Center align headings */
+.experience li {
+    list-style-type: square;
 }
 
-h3 {
-    color: #007BFF; /* Bootstrap blue for job titles */
+.experience h2{
+    color: #CBA879;
+    text-align: center;
+    padding-right: 130px;
 }
 
-/* Style for the unordered lists */
-ul {
-    list-style-type: disc; /* Default bullet points */
-    margin-left: 20px; /* Indent the list */
-    padding: 0; /* Remove padding */
+.experience h3{
+    color: #CBA879;
 }
 
-/* Style for list items */
-li {
-    font-family: Arial, sans-serif; /* Font for list items */
-    font-size: 16px; /* Font size for readability */
-    margin-bottom: 10px; /* Space between list items */
-    color: #555; /* Dark grey text color */
-}
+
+@media screen and (min-width: 601px) {
+    .section-format-experience {
+        width: 100%;
+        padding: 2%;
+        padding-left: 20%;
+        text-align: justify;
+        margin: 0;
+        /* height: 1000px; */
+
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .section-format-experience {
+        width: 80%;
+        text-align: initial;
+        margin: 0;
+        padding: 2%;
+        padding-left: 15%;
+        height: 100%;
+    }
+  }
