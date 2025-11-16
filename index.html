@@ -1,203 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Harshitha Vutukuru Muralikrishna | Graduate Student at CSULA</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Harshitha Vutukuru — Machine Learning Engineer. Portfolio with ML projects, SageMaker deployments, CNNs for medical imaging, and MLOps work." />
+  <title>Harshitha Vutukuru — ML Engineer</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Harshitha Vutukuru Muralikrishna</h1>
-            <p>Graduate Student at CSULA | Former Accenture</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+<body class="theme-cyberblue">
+  <header class="site-header" role="banner">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">HV</div>
+        <div>
+          <div class="brand-name">Harshitha Vutukuru</div>
+          <div class="brand-sub">Machine Learning Engineer • AWS ML Specialty</div>
         </div>
-    </header>
+      </div>
 
-    <section id="about" class="background-image-1">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                        <p>I hold a Master’s degree in Computer Science with a specialization in Data Science and Machine Learning from California State University, Los Angeles, completed in December 2024. 
-                            I am deeply passionate about building scalable machine learning systems that solve real-world problems in predictive modeling, data-driven decision-making, and optimization. 
-                            My academic journey sharpened my skills in algorithm design, feature engineering, model evaluation, and deployment workflows, equipping me to tackle industry challenges effectively.</p>
+      <nav class="primary-nav" role="navigation" aria-label="Main">
+        <ul id="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-                        <p>Previously, I worked as an Application Development Analyst at Accenture for nearly three years, where I engineered data-driven transaction systems for Societe Generale. 
-                            My responsibilities included designing SQL ETL pipelines handling over 10M records, integrating fraud detection ML models into APIs, and streamlining CI/CD pipelines with Java, 
-                            Spring Boot, and Jenkins. These experiences strengthened my expertise in combining backend engineering with applied machine learning to improve both efficiency and business outcomes.</p>
-                        
-                        <p>In addition to professional experience, I have completed multiple projects that highlight my ML expertise. These include a Brain Tumor Detection system using CNNs that achieved 95% accuracy 
-                            on MRI scans, a Retrieval-Augmented Generation (RAG) pipeline using OpenAI GPT-4, FAISS, and Pinecone for domain-specific retrieval, and an end-to-end ML deployment pipeline on AWS SageMaker 
-                            for scalable chatbot applications. Each project reflects my ability to design, optimize, and deploy advanced AI solutions in real-world contexts.</p>
-                        
-                        <p>With a strong foundation in Python, TensorFlow, PyTorch, NLP, and MLOps workflows, I am eager to contribute to impactful data science and machine learning projects in 2025. 
-                            My goal is to leverage cutting-edge AI techniques to deliver data-driven solutions that enhance efficiency, improve accuracy, and create tangible business and societal value.</p>
-                </div>
-                <div class="about-image">
-                    <img src="profile.JPEG" alt="Harshitha Vutukuru Muralikrishna">
-                </div>
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="Harshitha_V_M_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <button id="menu-toggle" class="btn btn-primary" aria-expanded="false">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="about" class="hero wrap">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="eyebrow">Machine learning • MLOps • Production AI</div>
+
+          <h1 class="hero-title">I build production-grade ML systems that deliver measurable impact</h1>
+
+          <!-- New polished intro from your resume -->
+          <p class="hero-intro">
+            I am a Machine Learning Engineer with 3+ years of experience building end-to-end ML systems, deploying scalable models on AWS, and developing data pipelines for production environments.
+            I specialize in Python, PyTorch, TensorFlow, Scikit-learn, and AWS SageMaker, with a strong foundation in MLOps, model optimization, and cloud-native deployment.
+            My work spans designing ETL workflows, training high-performance models for tasks like fraud detection and medical imaging, and deploying reliable inference endpoints using Docker, Kubernetes, and CI/CD pipelines.
+            I focus on reducing latency, improving accuracy, and delivering solutions that create business value.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore Projects</a>
+            <a class="btn btn-ghost" href="Harshitha_V_M_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+
+          <div class="muted small">Quick hits: SageMaker deployments • Model monitoring & drift detection • CNNs for medical imaging • RAG (FAISS + Pinecone)</div>
+        </div>
+
+        <aside class="profile-card">
+          <img src="assets/profile.jpg" alt="Harshitha profile" class="profile-img" onerror="this.style.display='none'">
+          <div class="profile-name">Harshitha Vutukuru</div>
+          <div class="profile-sub muted">MS Computer Science (Data Science) — CSULA</div>
+
+          <div class="social-quick">
+            <a class="btn btn-ghost small" href="https://github.com/harshithavutukuru" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost small" href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost small" href="https://www.kaggle.com/harshithavutukuru" target="_blank" rel="noopener">Kaggle</a>
+          </div>
+
+          <div class="accent-switcher" aria-hidden="false">
+            <label class="muted">Accent</label>
+            <div class="swatches">
+              <button class="swatch" data-theme="theme-cyberblue" title="Cyber Blue"></button>
+              <button class="swatch" data-theme="theme-violet" title="Violet"></button>
+              <button class="swatch" data-theme="theme-emerald" title="Emerald"></button>
+              <button class="swatch" data-theme="theme-blue" title="Pure Blue"></button>
             </div>
-        </div>
+          </div>
+        </aside>
+      </div>
     </section>
-    
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skill-list">
-                <div class="skill">
-                    <h3>Programming Languages</h3>
-                    <p>Python, JavaScript, HTML, CSS, Java</p>
-                </div>
-                <div class="skill">
-                    <h3>Machine learning Frameworks</h3>
-                    <p>TensorFlow, Scikit-learn, Keras, NLTK</p>
-                </div>
-                <div class="skill">
-                    <h3>Data Tools and Frameworks</h3>
-                    <p>SQL, SQLite, Spring, Tomcat, Flask, PyTorch, PySpark, Git, AWS, Hugging Face, Kubernets</p>
-                </div>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section wrap">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="subtle">Selected projects demonstrating production deployments, model performance, and MLOps practices.</p>
+
+      <div class="projects-grid">
+        <article class="card project-card">
+          <div class="project-img" aria-hidden="true">
+            <img src="assets/house_prices.png" alt="House price model screenshot" onerror="this.style.display='none'">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>Car / House Price Predictor — XGBoost (SageMaker)</h3>
+              <span class="badge">Regression • SageMaker</span>
             </div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <h3>Cerebro Vision</h3>
-                    <img src="brain_tumor_1.jpg" alt="PowerBI Dashboard">
-                    <p>Advanced CNN Diagnostics for Brain Tumor Identification focuses on enhancing the accuracy of brain tumor detection using deep learning techniques, 
-                        specifically Convolutional Neural Networks (CNNs). The primary goal is to develop a model that can classify MRI images as either healthy or tumor-affected, 
-                        potentially improving early detection and treatment outcomes.</p>
-                    <a href="https://github.com/harshithavutukuru/Datascience_project" target="_blank">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Car Price Predictor</h3>
-                    <img src="Car price predictor.png" alt="Excel Dashboard">
-                    <p>The project titled Car Price Prediction Using Machine Learning aims to build a predictive model to estimate the prices of used cars based on various features like 
-                        make, model, mileage, year of manufacture, fuel type, and more.</p>
-                    <a href="https://github.com/harshithavutukuru/Car-price-prediction" target="_blank">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Restaurant Rating Analysis</h3>
-                    <img src="restaurent_rating.png" alt="PowerBI Dashboard">
-                    <p>The goal of this project is to analyze a dataset containing customer ratings or purchase information and extract insights regarding various features, 
-                        such as product categories and customer demographics. 
-                        The ultimate aim is to predict purchase behaviors or ratings using machine learning techniques.</p>
-                    <a href="https://github.com/harshithavutukuru/Restaurents_ratings" target="_blank">View Project</a>
-                </div>
+            <p class="muted">End-to-end XGBoost pipeline on AWS SageMaker with automatic hyperparameter tuning and a Lambda-backed real-time endpoint for low-latency predictions.</p>
+            <ul class="impact">
+              <li>Improved prediction accuracy by <strong>~15%</strong> after automated tuning</li>
+              <li>Real-time inference via Lambda → low median latency</li>
+              <li class="tech-list">Python • XGBoost • SageMaker • Lambda • S3</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-ghost" href="https://github.com/harshithavutukuru/AWS-SageMaker" target="_blank" rel="noopener">View Code</a>
             </div>
-            <br>
-        </div>
-    </section>
+          </div>
+        </article>
 
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education-list">
-                <div class="education">
-                    <h3>California State University</h3>
-                    <p>Masters in Computer Science | Jan 2023 - Dec 2024</p>
-                </div>
-                <div class="education">
-                    <h3>RNS Institute of Technology - VTU </h3>
-                    <p>Bachelor Of Engineering in Information Science</p>
-                </div>
+        <article class="card project-card">
+          <div class="project-img" aria-hidden="true">
+            <img src="assets/brain_tumor_1.jpg" alt="Brain tumor detection preview" onerror="this.style.display='none'">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <h3>Cerebro Vision — Brain Tumor Detection (CNN)</h3>
+              <span class="badge">Classification • PyTorch</span>
             </div>
-        </div>
-    </section>
-    
-    <section id="experience">
-        <div class="container">
-            <h2>Work Experience</h2>
-            <div class="experience-list">
-                <div class="experience">
-                    <section>
-                        <h3>Application Development Analyst</h3>
-                        <p><i>Accenture</i></p>
-                        <p><i>Sep 2019 - May 2022</i></p>
-                        
-                        <p><b>Responsibilities:</b></p>
-                        <ul>
-                            <p>Developed data-driven transactions for Société Générale using JavaScript, MySQL, and RESTful APIs to improve transaction efficiency.</p>
-                            <p>Managed the deployment of new features using CI/CD pipelines, ensuring that production updates caused minimal disruption and planning for rollbacks when necessary.</p>
-                            <p>Created and maintained technical documentation for each stage of development, used Git for version control, and provided regular updates to stakeholders.</p>
-                            <p>Played a key role in conducting code reviews for pull requests, ensuring code quality and compliance with established coding standards.</p>
-                            <p>Worked with cross-functional teams using Agile, collaborating with developers and product owners to troubleshoot SQL and Java Spring issues. 
-                                Developed scalable solutions and integrated third-party services, similar to Reddit's API structure, for better system interoperability.</p>
-            
-                        </ul>
-                    </section>
-                </div>
-                <div class="experience">
-                    <section>
-                        <h3>Full Stack Intern</h3>
-                        <p><i>Spectrus Informatics Private Ltd</i></p>
-                        <p><i>Feb 2018 - May 2018</i></p>
-                        
-                        <p><b>Responsibilities:</b></p>
-                        <ul>
-                            <p>Built an interactive UI for an online boutique. Enabled and developed browsing features to shop using Angular2, JavaScript, and SQL, optimizing order processing.</p>
-                            <p>Spearheaded towards architecture and development by integrating SQL databases and CRUD operations for better data management.</p>
-                            <p>Implemented RESTful APIs with a responsive UI, improving user experience and retention.</p>
-            
-            
-                        </ul>
-                    </section>
-                </div>        
+            <p class="muted">Fine-tuned ResNet and VGG variants with augmentation and ensembling to minimize false positives for MRI classification.</p>
+            <ul class="impact">
+              <li>Achieved up to <strong>98%</strong> accuracy using augmentation & ensembling</li>
+              <li>Evaluated via ROC-AUC, Recall & F1</li>
+              <li class="tech-list">PyTorch • TensorFlow • ResNet50 • Docker</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-ghost" href="https://github.com/harshithavutukuru/Datascience_project" target="_blank" rel="noopener">View Code</a>
             </div>
-        </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:16px">
+        <a class="btn btn-ghost" href="https://github.com/harshithavutukuru" target="_blank" rel="noopener">See more on GitHub</a>
+      </div>
     </section>
 
-    <section id="resume">
-        <div class="container">
-            <ul>
-                <h3><a href="Harshitha Vutukuru Muralikrishna Resume.pdf" target="_blank"> RESUME </a></h3>
-                
-              </ul>
+    <!-- SKILLS -->
+    <section id="skills" class="section wrap">
+      <h2 class="section-title">Skills</h2>
+      <p class="subtle">Grouped skills — recruiter-friendly.</p>
 
-        </div>
-    </section>
-    
-
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out!</p>
-            <a href="harshitharaghu22@gmail.com">harshitharaghu22@gmail.com</a>
-            <a href="+91 8867116946" target="_blank">+91 8867116946</a>
-            <div class="social-links">
-                |
-                <a href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/harshithavutukuru" target="_blank">GitHub</a> |
-                <a href="https://harshithavutukuru.github.io/harshitha.github.io//" target="_blank">Profile</a> |
-                <a href="https://www.kaggle.com/harshithavutukuru" target="_blank">Kaggle</a>
-            </div>
-        </div>
+      <div class="skills-grid">
+        <div class="skill-box"><strong>Machine Learning</strong><div class="small muted">XGBoost • Scikit-Learn • PyTorch • TensorFlow • Keras</div></div>
+        <div class="skill-box"><strong>Data & Engineering</strong><div class="small muted">Pandas • NumPy • SQL • PySpark • Feature engineering</div></div>
+        <div class="skill-box"><strong>Cloud & MLOps</strong><div class="small muted">AWS SageMaker • Lambda • Docker • Kubernetes • CI/CD</div></div>
+        <div class="skill-box"><strong>NLP & LLM</strong><div class="small muted">Hugging Face • LangChain • FAISS • Pinecone • RAG</div></div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2024 Harshitha Vutukuru Muralikrishna. All Rights Reserved.</p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section wrap">
+      <h2 class="section-title">Experience</h2>
+
+      <div class="exp-list">
+        <div class="exp-item card">
+          <h3>Application Development Analyst</h3>
+          <div class="small muted">Accenture — Sep 2019 – May 2022</div>
+          <ul class="small muted">
+            <li>Built data-driven transaction systems for Société Générale using JavaScript, MySQL, and REST APIs.</li>
+            <li>Integrated ML-based fraud detection into production APIs; owned CI/CD pipelines (Jenkins).</li>
+            <li>Led code reviews and collaborated with cross-functional Agile teams.</li>
+          </ul>
         </div>
-    </footer>
+
+        <div class="exp-item card">
+          <h3>Full Stack Intern</h3>
+          <div class="small muted">Spectrus Informatics — Feb 2018 – May 2018</div>
+          <ul class="small muted">
+            <li>Developed responsive UI and CRUD APIs using Angular2 and SQL.</li>
+            <li>Implemented features to optimize order processing and data consistency.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section wrap">
+      <h2 class="section-title">Education & Certifications</h2>
+
+      <div class="edu-grid">
+        <div class="card">
+          <h3>MS — Computer Science (Data Science)</h3>
+          <div class="small muted">California State University, Los Angeles — Jan 2023 – Dec 2024</div>
+        </div>
+
+        <div class="card">
+          <h3>B.E. — Information Science</h3>
+          <div class="small muted">RNS Institute of Technology (VTU)</div>
+          <div style="margin-top:8px"><span class="badge">AWS Certified Machine Learning – Specialty</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section wrap">
+      <h2 class="section-title">Resume</h2>
+      <p class="subtle">Download the full resume with detailed project breakdowns and references.</p>
+      <a class="btn btn-primary" href="Harshitha_V_M_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section wrap">
+      <h2 class="section-title">Contact</h2>
+      <p class="subtle">Reach out for referrals, interviews, or collaboration.</p>
+
+      <div class="contact-grid">
+        <div class="card contact-card">
+          <p><strong>Email</strong></p>
+          <p class="small muted"><a href="mailto:harshitharaghu22@gmail.com">harshitharaghu22@gmail.com</a></p>
+          <p><strong>Phone</strong></p>
+          <p class="small muted"><a href="tel:+918368543948">+91 83285 43948</a></p>
+
+          <div style="margin-top:10px">
+            <a class="btn btn-ghost" href="https://github.com/harshithavutukuru" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="muted small" style="min-width:220px">Tip: include a one-line subject like "Referral: MLE role at X" to get faster responses.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© 2024 Harshitha Vutukuru. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
