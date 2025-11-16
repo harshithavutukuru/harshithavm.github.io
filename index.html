@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="theme-cyberblue">
+<body class="theme-blue">
   <header class="site-header" role="banner">
     <div class="wrap header-inner">
       <div class="brand">
@@ -65,113 +65,108 @@
         </div>
 
         <aside class="profile-card">
-          <!-- UPDATED PROFILE IMAGE -->
-          <img src="IMG_1951.JPG" alt="Harshitha profile" class="profile-img" onerror="this.style.display='none'">
+          <!-- Profile image (filename unchanged) -->
+          <img src="Harshitha_profile_Pic.JPG" alt="Harshitha profile" class="profile-img" onerror="this.style.display='none'">
 
           <div class="profile-name">Harshitha Vutukuru</div>
           <div class="profile-sub muted">MS Computer Science (Data Science) — CSULA</div>
 
           <div class="social-quick">
-            <a class="btn btn-ghost small" href="https://github.com/harshithavutukuru" target="_blank">GitHub</a>
-            <a class="btn btn-ghost small" href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank">LinkedIn</a>
-            <a class="btn btn-ghost small" href="https://www.kaggle.com/harshithavutukuru" target="_blank">Kaggle</a>
-          </div>
-
-          <div class="accent-switcher">
-            <label class="muted">Accent</label>
-            <div class="swatches">
-              <button class="swatch" data-theme="theme-cyberblue" title="Cyber Blue"></button>
-              <button class="swatch" data-theme="theme-violet" title="Violet"></button>
-              <button class="swatch" data-theme="theme-emerald" title="Emerald"></button>
-              <button class="swatch" data-theme="theme-blue" title="Pure Blue"></button>
-            </div>
+            <a class="btn btn-ghost small" href="https://github.com/harshithavutukuru" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost small" href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost small" href="https://www.kaggle.com/harshithavutukuru" target="_blank" rel="noopener">Kaggle</a>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (larger project sections) -->
     <section id="projects" class="section wrap">
       <h2 class="section-title">Featured Projects</h2>
       <p class="subtle">Selected projects demonstrating production deployments, model performance, and MLOps practices.</p>
 
-      <div class="projects-grid">
-        
+      <div class="projects-grid-large">
         <!-- PROJECT 1 -->
-        <article class="card project-card">
-          <div class="project-img">
+        <article class="card project-card-large">
+          <div class="project-img-large">
             <img src="Car price predictor.png" alt="Price predictor preview" onerror="this.style.display='none'">
           </div>
-          <div class="project-body">
+          <div class="project-body-large">
             <h3>Car / House Price Predictor — XGBoost (SageMaker)</h3>
             <span class="badge">Regression • SageMaker</span>
-            <p class="muted">End-to-end XGBoost pipeline on AWS SageMaker with hyperparameter tuning and Lambda-backed real-time inference.</p>
+            <p class="muted">End-to-end XGBoost pipeline on AWS SageMaker with hyperparameter tuning and Lambda-backed real-time inference for low-latency predictions.</p>
             <ul class="impact">
-              <li>Improved accuracy by ~15%</li>
-              <li>Low-latency predictions powered by Lambda</li>
+              <li>Improved accuracy by ~15% after automated hyperparameter tuning.</li>
+              <li>Low-latency real-time predictions via Lambda-backed endpoint.</li>
+              <li class="tech-list">Python • XGBoost • AWS SageMaker • Lambda • S3</li>
             </ul>
             <a class="btn btn-ghost" href="https://github.com/harshithavutukuru/AWS-SageMaker" target="_blank">View Code</a>
           </div>
         </article>
 
         <!-- PROJECT 2 -->
-        <article class="card project-card">
-          <div class="project-img">
-            <!-- UPDATED BRAIN TUMOR IMAGE -->
+        <article class="card project-card-large">
+          <div class="project-img-large">
             <img src="brain_tumor_1.jpg" alt="Brain tumor detection" onerror="this.style.display='none'">
           </div>
-          <div class="project-body">
+          <div class="project-body-large">
             <h3>Cerebro Vision — Brain Tumor Detection (CNN)</h3>
             <span class="badge">Classification • PyTorch</span>
-            <p class="muted">Fine-tuned CNN models (ResNet, VGG) for MRI tumor classification with high recall and AUC.</p>
+            <p class="muted">Fine-tuned CNN models (ResNet, VGG) for MRI tumor classification with a focus on clinical reliability and low false positives.</p>
             <ul class="impact">
-              <li>Achieved 98% accuracy</li>
-              <li>ROC-AUC, Recall & F1 optimized</li>
+              <li>Achieved up to 98% accuracy using augmentation and model ensembling.</li>
+              <li>Optimized evaluation using ROC-AUC, Recall & F1 to reduce false positives.</li>
+              <li class="tech-list">PyTorch • TensorFlow • ResNet50 • VGG19 • Docker</li>
             </ul>
             <a class="btn btn-ghost" href="https://github.com/harshithavutukuru/Datascience_project" target="_blank">View Code</a>
           </div>
         </article>
-
       </div>
     </section>
 
-    <!-- SKILLS, EXPERIENCE, EDUCATION, CONTACT (unchanged sections) -->
-
+    <!-- SKILLS (font size increased) -->
     <section id="skills" class="section wrap">
       <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-box"><strong>Machine Learning</strong><br><span class="muted small">XGBoost • Scikit-Learn • PyTorch • TensorFlow</span></div>
-        <div class="skill-box"><strong>Data Engineering</strong><br><span class="muted small">Pandas • NumPy • SQL • PySpark</span></div>
-        <div class="skill-box"><strong>MLOps</strong><br><span class="muted small">SageMaker • Docker • Kubernetes • CI/CD</span></div>
-        <div class="skill-box"><strong>NLP & LLM</strong><br><span class="muted small">FAISS • LangChain • Hugging Face</span></div>
+      <p class="subtle">Grouped skills — recruiter-friendly.</p>
+
+      <div class="skills-grid-large">
+        <div class="skill-box-large"><strong>Machine Learning</strong><div class="muted skill-text-large">XGBoost • Scikit-Learn • PyTorch • TensorFlow • Keras</div></div>
+        <div class="skill-box-large"><strong>Data & Engineering</strong><div class="muted skill-text-large">Pandas • NumPy • SQL • PySpark • Feature engineering</div></div>
+        <div class="skill-box-large"><strong>Cloud & MLOps</strong><div class="muted skill-text-large">AWS SageMaker • Lambda • Docker • Kubernetes • CI/CD</div></div>
+        <div class="skill-box-large"><strong>NLP & LLM</strong><div class="muted skill-text-large">Hugging Face • LangChain • FAISS • Pinecone • RAG</div></div>
       </div>
     </section>
 
+    <!-- EXPERIENCE (font size increased + Accenture bullets expanded) -->
     <section id="experience" class="section wrap">
-      <h2 class="section-title">Work Experience</h2>
+      <h2 class="section-title">Experience</h2>
 
-      <div class="exp-list">
+      <div class="exp-list-large">
         <div class="exp-item card">
           <h3>Application Development Analyst</h3>
           <div class="muted small">Accenture — Sep 2019 – May 2022</div>
-          <ul class="muted small">
-            <li>Developed data-driven transactions for Société Générale.</li>
-            <li>Integrated ML models into scalable backend systems.</li>
-            <li>Owned CI/CD automation using Jenkins.</li>
+          <ul class="muted exp-text-large">
+            <li>Designed and maintained SQL ETL pipelines ingesting and transforming datasets handling over <strong>10M</strong> records for downstream analytics and ML workloads.</li>
+            <li>Integrated ML-based fraud detection models into production REST APIs, enabling real-time scoring and reducing fraudulent transactions.</li>
+            <li>Streamlined CI/CD pipelines using Jenkins and containerized deployments (Docker), reducing deployment time and on-call incidents.</li>
+            <li>Developed backend services in Java and Spring Boot, collaborated on API design and monitoring to ensure high availability.</li>
+            <li>Implemented automated logging and monitoring, and coordinated incident response to improve production reliability and SLA adherence.</li>
+            <li>Conducted code reviews, mentored junior engineers, and collaborated with cross-functional teams to deliver features on Agile cadence.</li>
           </ul>
         </div>
 
         <div class="exp-item card">
           <h3>Full Stack Intern</h3>
           <div class="muted small">Spectrus Informatics — Feb 2018 – May 2018</div>
-          <ul class="muted small">
-            <li>Built responsive UI and CRUD APIs using Angular2 & SQL.</li>
-            <li>Optimized order workflows for better user experience.</li>
+          <ul class="muted exp-text-large">
+            <li>Built responsive UI and CRUD APIs using Angular2 and SQL to enable an interactive online boutique.</li>
+            <li>Optimized order processing workflows and database interactions to improve throughput and reliability.</li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education" class="section wrap">
       <h2 class="section-title">Education</h2>
       <div class="edu-grid">
@@ -187,11 +182,13 @@
       </div>
     </section>
 
+    <!-- RESUME -->
     <section id="resume" class="section wrap">
       <h2 class="section-title">Resume</h2>
       <a class="btn btn-primary" href="Harshitha_V_M_Resume.pdf" target="_blank">Download Resume</a>
     </section>
 
+    <!-- CONTACT (tip removed) -->
     <section id="contact" class="section wrap">
       <h2 class="section-title">Contact</h2>
       <div class="contact-grid">
@@ -201,9 +198,12 @@
 
           <strong>Phone</strong>
           <p class="muted small"><a href="tel:+918368543948">+91 83285 43948</a></p>
-        </div>
 
-        <div class="muted small">Tip: Use “Referral request — MLE role” as subject for quicker responses.</div>
+          <div style="margin-top:10px">
+            <a class="btn btn-ghost" href="https://github.com/harshithavutukuru" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
