@@ -49,7 +49,6 @@
 
           <h1 class="hero-title">I build production-grade ML systems that deliver measurable impact</h1>
 
-          <!-- New polished intro from your resume -->
           <p class="hero-intro">
             I am a Machine Learning Engineer with 3+ years of experience building end-to-end ML systems, deploying scalable models on AWS, and developing data pipelines for production environments.
             I specialize in Python, PyTorch, TensorFlow, Scikit-learn, and AWS SageMaker, with a strong foundation in MLOps, model optimization, and cloud-native deployment.
@@ -66,17 +65,19 @@
         </div>
 
         <aside class="profile-card">
-          <img src="assets/profile.jpg" alt="Harshitha profile" class="profile-img" onerror="this.style.display='none'">
+          <!-- UPDATED PROFILE IMAGE -->
+          <img src="IMG_1951.JPG" alt="Harshitha profile" class="profile-img" onerror="this.style.display='none'">
+
           <div class="profile-name">Harshitha Vutukuru</div>
           <div class="profile-sub muted">MS Computer Science (Data Science) — CSULA</div>
 
           <div class="social-quick">
-            <a class="btn btn-ghost small" href="https://github.com/harshithavutukuru" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-ghost small" href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank" rel="noopener">LinkedIn</a>
-            <a class="btn btn-ghost small" href="https://www.kaggle.com/harshithavutukuru" target="_blank" rel="noopener">Kaggle</a>
+            <a class="btn btn-ghost small" href="https://github.com/harshithavutukuru" target="_blank">GitHub</a>
+            <a class="btn btn-ghost small" href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank">LinkedIn</a>
+            <a class="btn btn-ghost small" href="https://www.kaggle.com/harshithavutukuru" target="_blank">Kaggle</a>
           </div>
 
-          <div class="accent-switcher" aria-hidden="false">
+          <div class="accent-switcher">
             <label class="muted">Accent</label>
             <div class="swatches">
               <button class="swatch" data-theme="theme-cyberblue" title="Cyber Blue"></button>
@@ -95,137 +96,114 @@
       <p class="subtle">Selected projects demonstrating production deployments, model performance, and MLOps practices.</p>
 
       <div class="projects-grid">
+        
+        <!-- PROJECT 1 -->
         <article class="card project-card">
-          <div class="project-img" aria-hidden="true">
-            <img src="assets/house_prices.png" alt="House price model screenshot" onerror="this.style.display='none'">
+          <div class="project-img">
+            <img src="Car price predictor.png" alt="Price predictor preview" onerror="this.style.display='none'">
           </div>
           <div class="project-body">
-            <div class="project-meta">
-              <h3>Car / House Price Predictor — XGBoost (SageMaker)</h3>
-              <span class="badge">Regression • SageMaker</span>
-            </div>
-            <p class="muted">End-to-end XGBoost pipeline on AWS SageMaker with automatic hyperparameter tuning and a Lambda-backed real-time endpoint for low-latency predictions.</p>
+            <h3>Car / House Price Predictor — XGBoost (SageMaker)</h3>
+            <span class="badge">Regression • SageMaker</span>
+            <p class="muted">End-to-end XGBoost pipeline on AWS SageMaker with hyperparameter tuning and Lambda-backed real-time inference.</p>
             <ul class="impact">
-              <li>Improved prediction accuracy by <strong>~15%</strong> after automated tuning</li>
-              <li>Real-time inference via Lambda → low median latency</li>
-              <li class="tech-list">Python • XGBoost • SageMaker • Lambda • S3</li>
+              <li>Improved accuracy by ~15%</li>
+              <li>Low-latency predictions powered by Lambda</li>
             </ul>
-            <div class="project-links">
-              <a class="btn btn-ghost" href="https://github.com/harshithavutukuru/AWS-SageMaker" target="_blank" rel="noopener">View Code</a>
-            </div>
+            <a class="btn btn-ghost" href="https://github.com/harshithavutukuru/AWS-SageMaker" target="_blank">View Code</a>
           </div>
         </article>
 
+        <!-- PROJECT 2 -->
         <article class="card project-card">
-          <div class="project-img" aria-hidden="true">
-            <img src="assets/brain_tumor_1.jpg" alt="Brain tumor detection preview" onerror="this.style.display='none'">
+          <div class="project-img">
+            <!-- UPDATED BRAIN TUMOR IMAGE -->
+            <img src="brain_tumor_1.jpg" alt="Brain tumor detection" onerror="this.style.display='none'">
           </div>
           <div class="project-body">
-            <div class="project-meta">
-              <h3>Cerebro Vision — Brain Tumor Detection (CNN)</h3>
-              <span class="badge">Classification • PyTorch</span>
-            </div>
-            <p class="muted">Fine-tuned ResNet and VGG variants with augmentation and ensembling to minimize false positives for MRI classification.</p>
+            <h3>Cerebro Vision — Brain Tumor Detection (CNN)</h3>
+            <span class="badge">Classification • PyTorch</span>
+            <p class="muted">Fine-tuned CNN models (ResNet, VGG) for MRI tumor classification with high recall and AUC.</p>
             <ul class="impact">
-              <li>Achieved up to <strong>98%</strong> accuracy using augmentation & ensembling</li>
-              <li>Evaluated via ROC-AUC, Recall & F1</li>
-              <li class="tech-list">PyTorch • TensorFlow • ResNet50 • Docker</li>
+              <li>Achieved 98% accuracy</li>
+              <li>ROC-AUC, Recall & F1 optimized</li>
             </ul>
-            <div class="project-links">
-              <a class="btn btn-ghost" href="https://github.com/harshithavutukuru/Datascience_project" target="_blank" rel="noopener">View Code</a>
-            </div>
+            <a class="btn btn-ghost" href="https://github.com/harshithavutukuru/Datascience_project" target="_blank">View Code</a>
           </div>
         </article>
-      </div>
 
-      <div style="margin-top:16px">
-        <a class="btn btn-ghost" href="https://github.com/harshithavutukuru" target="_blank" rel="noopener">See more on GitHub</a>
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- SKILLS, EXPERIENCE, EDUCATION, CONTACT (unchanged sections) -->
+
     <section id="skills" class="section wrap">
       <h2 class="section-title">Skills</h2>
-      <p class="subtle">Grouped skills — recruiter-friendly.</p>
-
       <div class="skills-grid">
-        <div class="skill-box"><strong>Machine Learning</strong><div class="small muted">XGBoost • Scikit-Learn • PyTorch • TensorFlow • Keras</div></div>
-        <div class="skill-box"><strong>Data & Engineering</strong><div class="small muted">Pandas • NumPy • SQL • PySpark • Feature engineering</div></div>
-        <div class="skill-box"><strong>Cloud & MLOps</strong><div class="small muted">AWS SageMaker • Lambda • Docker • Kubernetes • CI/CD</div></div>
-        <div class="skill-box"><strong>NLP & LLM</strong><div class="small muted">Hugging Face • LangChain • FAISS • Pinecone • RAG</div></div>
+        <div class="skill-box"><strong>Machine Learning</strong><br><span class="muted small">XGBoost • Scikit-Learn • PyTorch • TensorFlow</span></div>
+        <div class="skill-box"><strong>Data Engineering</strong><br><span class="muted small">Pandas • NumPy • SQL • PySpark</span></div>
+        <div class="skill-box"><strong>MLOps</strong><br><span class="muted small">SageMaker • Docker • Kubernetes • CI/CD</span></div>
+        <div class="skill-box"><strong>NLP & LLM</strong><br><span class="muted small">FAISS • LangChain • Hugging Face</span></div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="section wrap">
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title">Work Experience</h2>
 
       <div class="exp-list">
         <div class="exp-item card">
           <h3>Application Development Analyst</h3>
-          <div class="small muted">Accenture — Sep 2019 – May 2022</div>
-          <ul class="small muted">
-            <li>Built data-driven transaction systems for Société Générale using JavaScript, MySQL, and REST APIs.</li>
-            <li>Integrated ML-based fraud detection into production APIs; owned CI/CD pipelines (Jenkins).</li>
-            <li>Led code reviews and collaborated with cross-functional Agile teams.</li>
+          <div class="muted small">Accenture — Sep 2019 – May 2022</div>
+          <ul class="muted small">
+            <li>Developed data-driven transactions for Société Générale.</li>
+            <li>Integrated ML models into scalable backend systems.</li>
+            <li>Owned CI/CD automation using Jenkins.</li>
           </ul>
         </div>
 
         <div class="exp-item card">
           <h3>Full Stack Intern</h3>
-          <div class="small muted">Spectrus Informatics — Feb 2018 – May 2018</div>
-          <ul class="small muted">
-            <li>Developed responsive UI and CRUD APIs using Angular2 and SQL.</li>
-            <li>Implemented features to optimize order processing and data consistency.</li>
+          <div class="muted small">Spectrus Informatics — Feb 2018 – May 2018</div>
+          <ul class="muted small">
+            <li>Built responsive UI and CRUD APIs using Angular2 & SQL.</li>
+            <li>Optimized order workflows for better user experience.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- EDUCATION -->
     <section id="education" class="section wrap">
-      <h2 class="section-title">Education & Certifications</h2>
-
+      <h2 class="section-title">Education</h2>
       <div class="edu-grid">
         <div class="card">
-          <h3>MS — Computer Science (Data Science)</h3>
-          <div class="small muted">California State University, Los Angeles — Jan 2023 – Dec 2024</div>
+          <h3>M.S. Computer Science</h3>
+          <p class="muted small">California State University, Los Angeles</p>
         </div>
 
         <div class="card">
-          <h3>B.E. — Information Science</h3>
-          <div class="small muted">RNS Institute of Technology (VTU)</div>
-          <div style="margin-top:8px"><span class="badge">AWS Certified Machine Learning – Specialty</span></div>
+          <h3>B.E. Information Science</h3>
+          <p class="muted small">RNS Institute of Technology</p>
         </div>
       </div>
     </section>
 
-    <!-- RESUME -->
     <section id="resume" class="section wrap">
       <h2 class="section-title">Resume</h2>
-      <p class="subtle">Download the full resume with detailed project breakdowns and references.</p>
-      <a class="btn btn-primary" href="Harshitha_V_M_Resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+      <a class="btn btn-primary" href="Harshitha_V_M_Resume.pdf" target="_blank">Download Resume</a>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section wrap">
       <h2 class="section-title">Contact</h2>
-      <p class="subtle">Reach out for referrals, interviews, or collaboration.</p>
-
       <div class="contact-grid">
         <div class="card contact-card">
-          <p><strong>Email</strong></p>
-          <p class="small muted"><a href="mailto:harshitharaghu22@gmail.com">harshitharaghu22@gmail.com</a></p>
-          <p><strong>Phone</strong></p>
-          <p class="small muted"><a href="tel:+918368543948">+91 83285 43948</a></p>
+          <strong>Email</strong>
+          <p class="muted small"><a href="mailto:harshitharaghu22@gmail.com">harshitharaghu22@gmail.com</a></p>
 
-          <div style="margin-top:10px">
-            <a class="btn btn-ghost" href="https://github.com/harshithavutukuru" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/harshitha-vutukuru-muralikrishna/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
+          <strong>Phone</strong>
+          <p class="muted small"><a href="tel:+918368543948">+91 83285 43948</a></p>
         </div>
 
-        <div class="muted small" style="min-width:220px">Tip: include a one-line subject like "Referral: MLE role at X" to get faster responses.</div>
+        <div class="muted small">Tip: Use “Referral request — MLE role” as subject for quicker responses.</div>
       </div>
     </section>
   </main>
