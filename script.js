@@ -1,6 +1,5 @@
-// Minimal JS: mobile menu + accent switcher persistence
+// Mobile nav only (accent switching removed)
 document.addEventListener('DOMContentLoaded', function () {
-  // Mobile nav toggle
   const btn = document.getElementById('menu-toggle');
   const nav = document.querySelector('.primary-nav ul');
   if (btn && nav) {
@@ -18,27 +17,4 @@ document.addEventListener('DOMContentLoaded', function () {
       nav.style.boxShadow = '0 10px 30px rgba(2,6,8,0.6)';
     });
   }
-
-  // Accent switcher buttons
-  const swatches = document.querySelectorAll('.swatch');
-  swatches.forEach(s => {
-    s.addEventListener('click', () => {
-      const theme = s.getAttribute('data-theme');
-      if (theme) {
-        document.body.classList.remove('theme-cyberblue','theme-violet','theme-emerald','theme-blue');
-        document.body.classList.add(theme);
-        // save preference
-        try { localStorage.setItem('hv_theme', theme); } catch(e){}
-      }
-    });
-  });
-
-  // Load saved theme
-  try {
-    const saved = localStorage.getItem('hv_theme');
-    if (saved) {
-      document.body.classList.remove('theme-cyberblue','theme-violet','theme-emerald','theme-blue');
-      document.body.classList.add(saved);
-    }
-  } catch(e){}
 });
