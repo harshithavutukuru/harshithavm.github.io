@@ -1,34 +1,62 @@
-/* Clean FAANG-style buttons */
-.btn {
-  padding: 10px 18px;
-  border-radius: 8px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: 0.18s ease-in-out;
-  font-size: 15px;
+/* === FORCE SIMPLE BUTTON STYLES (paste at END of style.css) === */
+
+/* primary: simple solid blue */
+.btn.btn-primary,
+button.btn.btn-primary,
+a.btn.btn-primary {
+  background: #3b82f6 !important;   /* solid blue */
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  text-shadow: none !important;
+  padding: 10px 18px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  transition: transform .12s ease, background .12s ease !important;
 }
 
-/* Primary = solid blue */
-.btn-primary {
-  background: #3b82f6;   /* simple blue */
-  color: white;
-  box-shadow: none;
+/* hover (darker blue) */
+.btn.btn-primary:hover,
+button.btn.btn-primary:hover,
+a.btn.btn-primary:hover {
+  background: #2563eb !important;
+  transform: translateY(-2px) !important;
 }
 
-.btn-primary:hover {
-  background: #2563eb;   /* darker blue */
-  transform: translateY(-2px);
+/* secondary: transparent with clean white outline */
+.btn.btn-ghost,
+button.btn.btn-ghost,
+a.btn.btn-ghost {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255,255,255,0.45) !important;
+  box-shadow: none !important;
+  padding: 10px 18px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  transition: transform .12s ease, border-color .12s ease !important;
 }
 
-/* Secondary = clean outline */
-.btn-ghost {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.4);
-  color: white;
+/* ghost hover */
+.btn.btn-ghost:hover,
+button.btn.btn-ghost:hover,
+a.btn.btn-ghost:hover {
+  border-color: #ffffff !important;
+  transform: translateY(-2px) !important;
 }
 
-.btn-ghost:hover {
-  border-color: white;
-  transform: translateY(-2px);
+/* Ensure no parent rule is adding gradient or background-image */
+.header-cta .btn,
+.hero-actions .btn {
+  background-image: none !important;
+}
+
+/* Accessibility: maintain contrast */
+.btn.btn-primary:focus,
+.btn.btn-ghost:focus {
+  outline: 2px solid rgba(59,130,246,0.25);
+  outline-offset: 2px;
 }
