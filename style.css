@@ -1,18 +1,18 @@
-/* Dark theme - Pure Blue accent (FAANG-friendly) */
+/* Dark theme - Simple Blue accent (FAANG-friendly) */
 :root{
   --bg:#0d1117;
   --card:#0f1720;
   --text:#e6edf3;
   --muted:#8b949e;
-  --accent:#3b82f6;       /* PURE BLUE chosen */
-  --accent-strong: rgba(59,130,246,0.12);
+  --accent:#1e40af;       /* Simple solid blue chosen */
+  --accent-strong: rgba(30,64,175,0.12);
   --glass: rgba(255,255,255,0.03);
   --radius:12px;
   --container:1100px;
 }
 
 /* force theme-blue (no switching) */
-.theme-blue { /* kept for compatibility */ }
+.theme-blue { }
 
 *{box-sizing:border-box}
 html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
@@ -30,8 +30,21 @@ a{color:var(--accent); text-decoration:none}
 .primary-nav a{color:var(--muted);padding:8px 10px;border-radius:8px;font-weight:600}
 .primary-nav a:hover{background:var(--glass);color:var(--text)}
 .header-cta{display:flex;gap:8px;align-items:center}
+
+/* Buttons */
 .btn{padding:8px 12px;border-radius:8px;font-weight:700;border:none;cursor:pointer}
-.btn-primary{background:linear-gradient(90deg,var(--accent), rgba(0,0,0,0.15));color:#06101a;box-shadow:0 8px 28px rgba(0,0,0,0.5)}
+
+/* Solid blue primary button */
+.btn-primary {
+  background-color: var(--accent); /* Solid blue */
+  color: #ffffff;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.5);
+}
+.btn-primary:hover {
+  background-color: #2563eb; /* Slightly lighter blue on hover */
+}
+
+/* Ghost buttons remain transparent with border */
 .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text)}
 
 /* hero */
@@ -52,7 +65,7 @@ a{color:var(--accent); text-decoration:none}
 .social-quick{display:flex;gap:8px;justify-content:center;margin-top:12px}
 
 /* Projects - larger cards */
-.projects-grid-large{display:grid;grid-template-columns:1fr;gap:20px} /* stacked on smaller screens by default */
+.projects-grid-large{display:grid;grid-template-columns:1fr;gap:20px} 
 @media(min-width:900px){
   .projects-grid-large{grid-template-columns:1fr 1fr;gap:28px}
 }
